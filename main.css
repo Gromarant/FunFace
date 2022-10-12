@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.face {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 18%;
+}
+#face-select {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+.undate {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.lovely {
+    background-color: rgb(212, 4, 150);
+}
+.faceLove {
+    content: url(./images/lover.jpg);
+}
+.deranged {
+    background-color: rgb(133, 19, 19)
+}
+.derangedFace {
+    content: url(./images/crazy.jpg);
+}
+
+.pink{
+    background-color: rgb(241, 115, 136);
+}
+.pink:hover {
+    background-color: rgb(224, 73, 99);
+}
+
+.orange{
+    background-color: rgb(238, 123, 29);
+}
+.orange:hover {
+    background-color: rgb(224, 104, 5);
+}
