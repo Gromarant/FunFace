@@ -1,32 +1,41 @@
 'use strict';
+import { emojisData } from './emojis.js';
 
-const undate = document.querySelector('.undate');
-const faceImg = document.querySelector('.face');
-const face = document.querySelector('#face-select');
-const background = document.querySelector('.contain');
-const selectButton = document.querySelector('.selectButton');
+const faceSelector = document.querySelector('.select-Button');
+const image = document.querySelector('.container__face');
+const update = document.querySelector('.update');
+const randomUpdate = document.querySelector('.random-face');
 
-undate.addEventListener( 'click', () => {
-  if( face.value === 'crazy' ) {
-    undate.classList.remove('orange');
-    selectButton.classList.remove('pink');
-    background.classList.remove('lovely');
-    faceImg.classList.remove('faceLove');
+const emojis = [ 'Crazy', 'In Love', 'How Much', 'Rapper', 'Toothless', 'Hypnotized',  'Angry', 'Why', 'hahahaha', 'Beau', 'Weepy' ]
 
-    undate.classList.add('pink');
-    selectButton.classList.add('orange');
-    background.classList.add('deranged');
-    faceImg.classList.add('derangedFace');
-  } 
-  if( face.value === 'Love' ) {
-    undate.classList.remove('pink');
-    selectButton.classList.remove('orange');
-    background.classList.remove('deranged');
-    faceImg.classList.remove('derangedFace');
+const getRgbBgColor = () => {
+  let red = Math.floor( Math.random() * 256);
+  let green = Math.floor( Math.random() * 256);
+  let blue = Math.floor( Math.random() * 256);
+  const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+  return rgbColor;
+}
 
-    undate.classList.add('orange');
-    selectButton.classList.add('pink');
-    background.classList.add('lovely');
-    faceImg.classList.add('faceLove');
-  }
+const SetrgbBgColor = () => document.body.style.background = getRgbBgColor();
+
+const emojiBuilder = ({ src, alt, title }) => `<img class="face" src="${ src }" alt="${ alt }" title="${ title }">`;
+
+const randomIndex = () => Math.floor( Math.random() * (emojis.length) );
+
+const getRandomEmoji = () => emojis[randomIndex()];
+
+const getEmoji = () => ( faceSelector.value === '' ) ? getRandomEmoji() : faceSelector.value;
+
+const setEmoji = ( emoji ) => image.innerHTML = emojiBuilder( emojisData[emoji] );
+SetrgbBgColor();
+setEmoji( getRandomEmoji() );
+
+randomUpdate.addEventListener( 'click', () => {
+  SetrgbBgColor();
+  setEmoji( getRandomEmoji() );
 })
+
+update.addEventListener( 'click', () => {
+  SetrgbBgColor();
+  setEmoji( getEmoji() );
+});

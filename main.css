@@ -3,60 +3,177 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --primary-font: 'Itim', cursive;
+}
 body {
+    font-size: 10px;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
-    gap: 2rem;
-    justify-content: space-around;
     align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    min-width: 30rem;
+    margin: auto;
+}
+.container__face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
 }
 .face {
     border-radius: 50%;
+    height: 65%;
+    width: 90%;
+}
+.select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    padding: 0 1rem;
+    gap: 1rem;
     height: 30%;
-    width: 30%;
+    width: 100%;
+}
+.container__random-face {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.container__select-button {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.container__update {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
-.buttons {
+.select-Button, .update, .random-face {
     display: flex;
-    justify-content: space-around;
-    width: 18%;
-}
-#face-select {
+    place-content: center;
     border: none;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
-}
-.undate {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
-}
-
-.lovely {
-    background-color: rgb(212, 4, 150);
-}
-.faceLove {
-    content: url(./images/lover.jpg);
-}
-.deranged {
-    background-color: rgb(133, 19, 19)
-}
-.derangedFace {
-    content: url(./images/crazy.jpg);
+    padding: 1.2rem;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    text-align: center;
+    color: cornsilk;
+    height: fit-content;
+    width: 100%;
 }
 
-.pink{
+/* small landscape styles */
+@media (max-width: 740px) and (orientation: landscape) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+        gap: 0.5rem;
+    }
+    .container__face {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 100%;
+    }
+    .face {
+        height: 90%;
+        width: 35%;
+        min-height: 3.7rem;
+    }
+    .container__select {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .select {
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+        grid-template-rows: 100%;
+        padding: 0 2rem;
+        gap: 0.5rem;
+        height: 100%;
+        width: 100%;
+    }
+    .select-Button, .update, .random-face {
+        font-size: 1.2rem;
+        padding: 0.68rem 0rem;
+    }
+    .container__random-face {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .container__select-button {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .container__update {
+        grid-column: 3/4;
+        grid-row: 1/2; 
+    }
+    .random-face {
+        width: 80%;
+        justify-self: start;
+    } 
+}
+
+/* medium portrait styles */
+@media (min-width: 768px) {
+    .face {
+        height: 80%;
+        width: 80%;
+    }  
+    .select {
+        padding: 0 2rem;
+    }
+    .select-Button, .update, .random-face {
+        font-size: 1.8rem;
+    } 
+}
+
+/* large styles */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 102.4rem;
+        max-height: 70rem;
+    }
+    .face {
+        height: 90%;
+        width: 36%;
+        max-height: 80rem;
+        max-width: 40rem;
+    }  
+    .select {
+        padding: 0 2rem;
+        gap: 1.2remrem;
+    }
+    .select-Button, .update, .random-face {
+        font-size: 1.8rem;
+    } 
+}
+
+.random-face {
+    background-color: rgb(36, 194, 175);
+    color: darkslategrey;
+}
+.random-face:hover {
+    background-color: rgb(32, 112, 141);
+    color: cornsilk;
+}
+
+.select-Button {
     background-color: rgb(241, 115, 136);
 }
-.pink:hover {
+.select-Button:hover {
     background-color: rgb(224, 73, 99);
 }
 
-.orange{
+.update{
     background-color: rgb(238, 123, 29);
 }
-.orange:hover {
+.update:hover {
     background-color: rgb(224, 104, 5);
 }
