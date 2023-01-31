@@ -6,7 +6,7 @@ const image = document.querySelector('.container__face');
 const update = document.querySelector('.update');
 const randomUpdate = document.querySelector('.random-face');
 
-const emojis = [ 'Crazy', 'In Love', 'How Much', 'Rapper', 'Toothless', 'Hypnotized',  'Angry', 'Why', 'hahahaha', 'Beau', 'Weepy' ]
+const emojis = [ 'Crazy', 'In Love', 'How Much', 'Rapper', 'Toothless', 'Hypnotized',  'Angry', 'Why', 'hahahaha', 'Beau', 'Weepy', 'Dumb' ]
 
 const getRgbBgColor = () => {
   let red = Math.floor( Math.random() * 256);

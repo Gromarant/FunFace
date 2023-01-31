@@ -56,4 +56,9 @@ export const emojisData = {
     alt: "weepy emoji face",
     title: "weepy emoji",
   },
+  'Dumb': {
+    src: "images/dumb.webp",
+    alt: "Dumb emoji face",
+    title: "Dumb emoji",
+  },
 };
