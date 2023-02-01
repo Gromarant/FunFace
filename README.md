@@ -19,4 +19,5 @@ And other expressions, FunFace is an interactive page with a user-friendly exper
 
 [<img align="right" width="208" height="64" src="/images/readme-images/logo-big-medium-Gromarant-2023.png">](https://www.gromarant.com/)
 <br>
+<br>
 [&copy; Mariangelica Rodriguez](https://www.linkedin.com/in/mariangelica-rodr%C3%ADguez-p%C3%A9rez/)
