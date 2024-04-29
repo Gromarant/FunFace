@@ -10,7 +10,7 @@
 
 <br>
 
-Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/Language-Spanish-blue.svg)](README.es.md)
+Cambiar a:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Inglés-green.svg)](README.md)
 
 ---
 
