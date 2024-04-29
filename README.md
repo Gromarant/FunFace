@@ -43,7 +43,7 @@ This is a page make you smile!!! FunFace was built with **Html, CSS**, and **JS*
 
 ### Dropdown:
 
-displays a menu with emoji options.<br>
+Displays a menu with emoji options.<br>
 
 <p align="center"><img src="images/readme-images/dropdown_readme.svg" alt="Dropdown image"/></p>
 
@@ -274,7 +274,7 @@ The typography information shown in the design system includes font-family, font
 
 ## Languages and tools:
 
-Use for the project development:
+Used for the project development:
 
 <p align="center">
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="images/readme-images/html_readme_dark_aqua.svg" title="know more about HTML" alt="HTML"/></a> &nbsp; &nbsp;

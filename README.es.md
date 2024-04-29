@@ -15,7 +15,7 @@ Cambiar a:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Inglés-green
 ---
 
 # FunFace
-Esta página es hacerte sonreír!!! FunFace fué desarrollada con **Html, CSS**, y **JS**. También diseñada y prototipada en **Figma**. &nbsp; &nbsp; 
+Esta página es para hacerte sonreír!!! FunFace fué desarrollada con **Html, CSS**, y **JS**. También diseñada y prototipada en **Figma**. &nbsp; &nbsp; 
 
 <br>
 
@@ -44,7 +44,7 @@ Esta página es hacerte sonreír!!! FunFace fué desarrollada con **Html, CSS**,
 
 ### Menú desplegable:
 
-despliega un menú con las opciones de emoji.<br>
+Despliega un menú con las opciones de emoji.<br>
 
 <br>
 
@@ -54,7 +54,7 @@ despliega un menú con las opciones de emoji.<br>
 <br>
 
 ### Botón:
-1. get random face: muestra un emoji aleatorio en la página, cada vez que se le hace click.<br>
+1. Get random face: Muestra un emoji aleatorio en la página, cada vez que se le hace click.<br>
 2. Update: Establece el emoji previamente seleccionado en el menú desplegable.<br>
 
 <br>
